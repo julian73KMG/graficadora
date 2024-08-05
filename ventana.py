@@ -19,8 +19,9 @@ def ventana ():
     pestaña.resizable(0,0)
     pestaña.geometry("900x500+220+100")
 
-    icono = PhotoImage(file="icons8-calculator-32.png")
-    pestaña.iconphoto(True, icono)
+    pestaña.iconbitmap('icons8-calculator-32.ico')
+    #icono = PhotoImage(file="icons8-calculator-32.png")
+    #pestaña.iconphoto(True, icono)
 
     # Crear el limite entre la calculadora y la grafica
     canvas = Canvas(pestaña, width=1050, height=650, bg="white smoke")
